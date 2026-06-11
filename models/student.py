@@ -12,3 +12,5 @@ class Student:
         return '{}: {} enrolled in {}'.format(self.id, self.name, self.course)
     def display_school(self):
         return '{} is student of {}'.format(self.name, self.school_name)
+    def toFile_format(self):
+        return f'{self.id}, {self.name}, {self.age}, {self.course}\n'

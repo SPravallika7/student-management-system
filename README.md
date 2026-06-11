@@ -1,10 +1,6 @@
 # Student Management System
 
-## Overview
-
-A CLI-based Student Management System built using Python and Object-Oriented Programming principles.
-
-The application allows users to manage student records through a menu-driven interface and perform CRUD operations with input validation.
+A menu-driven Python application to manage student records using Object-Oriented Programming and file persistence.
 
 ## Features
 
@@ -16,60 +12,78 @@ The application allows users to manage student records through a menu-driven int
 * Duplicate ID Validation
 * Name Validation
 * Age Validation
-* Exception Handling for Invalid Inputs
-* Menu-Driven CLI
-
-## Concepts Used
-
-* Classes and Objects
-* Constructors (`__init__`)
-* Instance Variables
-* Methods
-* Modules and Packages
-* CRUD Operations
-* Validation Layer
 * Exception Handling
-* Menu-Driven Application Design
+* Persistent Storage using Text Files
+
+## Technologies Used
+
+* Python
+* OOP (Classes & Objects)
+* File Handling
+* Modules & Packages
+* Exception Handling
 
 ## Project Structure
 
-student_management/
-
+```text
+StudentManagement/
+│
 ├── models/
-
 │   └── student.py
-
+│
 ├── services/
-
 │   └── student_manager.py
-
+│
 ├── validators/
-
 │   └── validator.py
+│
+├── data/
+│   └── students.txt
+│
+└── main.py
+```
 
-├── main.py
+## Concepts Implemented
 
-└── README.md
+* Classes and Objects
+* Instance Variables
+* Class Variables
+* Methods
+* Encapsulation (Basic)
+* Inheritance (Basic)
+* File Read/Write Operations
+* Data Persistence
+* CRUD Operations
+* Input Validation
 
 ## How to Run
 
 1. Clone the repository
 
-2. Navigate to the project folder
+```bash
+git clone <repository-url>
+```
 
-3. Run:
+2. Navigate to project folder
 
+```bash
+cd StudentManagement
+```
+
+3. Run the application
+
+```bash
 python main.py
+```
 
 ## Future Improvements
 
-* File Handling
+* Custom Exceptions
 * JSON Storage
-* Type Hints
-* Logging
+* SQLite Database Integration
 * Unit Testing
-* FastAPI/Django Integration
+* REST API Development
+* Django/FastAPI Backend
 
-## Author
-
-Pravallika Suryavamsi
+```
+```

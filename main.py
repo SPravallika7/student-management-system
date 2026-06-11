@@ -2,16 +2,9 @@ from models.student import Student
 from services.student_manager import StudentManager
 from validators.validator import Validator
 
-student_1=Student(1,"Anny",20,"Python")
-student_2=Student(2,"Amit",20,"Java")
-student_3=Student(3,"Anjali",20,"Python")
-
 manager=StudentManager()
+manager.load_students()
 validator=Validator()
-#Adding students to the manager
-#manager.add_students(student_1)
-#manager.add_students(student_2)
-#manager.add_students(student_3)
 
 while True:
     print("1.View students")
@@ -49,6 +42,7 @@ while True:
            new_student=Student(id, name, age, course)
            manager.add_students(new_student)
            print("Student added successfully")
+           
            manager.view_students()
 
         # Search Student #
